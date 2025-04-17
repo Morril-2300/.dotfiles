@@ -19,9 +19,9 @@ set $term alacritty
 set $editor code-oss
 set $browser firefox
 set $menu rofi -show drun
-set $pass-man keepassxc
+set $pass keepassxc
 set $files nautilus
-set $config $editor ~/.config
+set $config $editor ~/.dotfiles
 
 ### Output configuration
 #
@@ -81,7 +81,7 @@ input * {
     # Start a terminal
     bindsym $mod+Return exec $term
     bindsym $mod+d exec $menu
-    bindsym $mod+k exec $pass-man
+    bindsym $mod+k exec $pass
     bindsym $mod+c exec $editor
     bindsym $mod+w exec $browser
     bindsym $mod+e exec $files
