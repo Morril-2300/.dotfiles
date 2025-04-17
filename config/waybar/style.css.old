@@ -1,0 +1,38 @@
+* {
+  font-family: "JetBrainsMono Nerd Font", monospace;
+  font-size: 14px;
+  padding: 0 8px;
+  color: #ffffff;
+}
+
+window#waybar {
+  background-color: rgba(30, 30, 46, 0.9);
+  border: none;
+}
+
+#clock {
+  font-weight: bold;
+}
+
+#cpu,
+#memory,
+#network,
+#pulseaudio,
+#tray,
+#sway-workspaces {
+  margin: 0 5px;
+}
+
+#sway-workspaces button {
+  padding: 2px 6px;
+  border-radius: 5px;
+}
+
+#sway-workspaces button.focused {
+  background-color: #89b4fa;
+  color: #1e1e2e;
+}
+
+#tray {
+  padding-right: 10px;
+}

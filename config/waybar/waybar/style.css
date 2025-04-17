@@ -1,0 +1,165 @@
+/* General Styling */
+
+* {
+    font-family: 'Nerd-Font';
+  }
+
+
+  #waybar {
+    font-weight: 700;
+    background: rgba(128, 128, 128, 0.3);
+  }
+
+  /* Module Specific Styles ************************/
+
+  /* Workspaces */
+  #workspaces {
+    background: rgba(0, 0, 0, 0);
+  }
+  #workspaces button {
+    background: #404040;
+    color: #ff9933;
+    font-weight: 200;
+    min-width: 20px;
+    font-size: 18px;
+  }
+  #workspaces button.focused {
+    background: #29665d;
+    color: #f2673a;
+  } 
+  #workspaces button.urgent {
+    background-color: #c33;
+    color: #000;
+  }
+
+  /* Battery */
+  #battery {
+    color: #ffcc00;
+  }
+  #battery.full {
+    color: #38a64e;
+  }
+  #battery.warning {
+    color: #f2673a;
+  }
+  #battery.critical {
+    color: #cc3333;
+  }
+  #battery.charging {
+    color: #38a64e;
+  }
+  #battery.charging.warning {
+    color: #ffcc00;
+  }#battery.charging.critical {
+    color: #ff9933;
+  }
+
+  /* CPU */
+  #cpu {
+    color: #ffcc00;
+  }
+  #cpu.low {
+    color: #38a64e;
+  }
+  #cpu.high {
+    color: #ff9933;
+  }
+  #cpu.critical {
+    color: #cc3333;
+  }
+  
+  /* Memory */
+  #memory {
+    color: #ffcc00;
+  }
+  #memory.low {
+    color: #38a64e;
+  }
+  #memory.high {
+    color: #ff9933;
+  }
+  #memory.critical {
+    color: #cc3333;
+  }
+  
+  /* Network */
+  #network {
+    color: #38a64e;
+  }
+  
+  #network .disconnected {
+    color: #cc3333;
+  }
+  
+  /* Temperature */
+  #temperature {
+    color: #ffffff;
+  }
+  
+  
+  /* Pulseaudio */
+  #pulseaudio {
+    color: #cce7ff;
+  }
+  
+  #pulseaudio.muted {
+    color: #ff6666;
+  }
+  
+  /* Icon Styles */
+  
+  #module.icon {
+    font-size: 100px;
+    color: inherit;
+  }
+
+  /* Clock */
+  #clock {
+    color: #ff9933;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  #clock:hover {
+    color: #ffcc00;
+  }
+
+  #tray {
+    padding-left: 10px;
+    padding-right: 0px;
+  }
+  #custom-hostname {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  /* Tooltip Styles */
+  #tooltip {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+    padding: 5px;
+    border-radius: 5px;
+  }  
+  
+
+  .modules-right * {
+    padding-right: 10px;
+    font-size: 15px;
+  }
+  .modules-right {
+    background: rgba(64, 64, 64, 0.7);
+    border-radius: 6px;
+  }
+
+  .modules-left {
+    background: rgba(64, 64, 64, 0.7);
+    border-radius: 6px;
+  }
+
+  .modules-center {
+    background: rgba(64, 64, 64, 0.7);
+    border-radius: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }

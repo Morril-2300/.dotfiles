@@ -1,0 +1,152 @@
+/* General Styling */
+
+
+* {
+    font-family: monospace, "JetBrainsMono Nerd Font";
+    /* background: transparent; */
+  }
+
+  #waybar {
+    background: rgba(0, 0, 0, 0.8);
+    /* opacity: 1;  */
+  }
+  
+ 
+
+  /* Module Specific Styles */
+  #workspaces button {
+    min-width: 20px;
+    font-size: 18px;
+  }
+  #workspaces button.focused {
+    background: #29665d;
+  } 
+  #workspaces button.urgent {
+    background-color: #cc3333;
+  }
+
+  /* Clock */
+  #clock {
+    color: #ffcc00;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  #clock:hover {
+    color: #f15f99;
+  }
+  
+  /* CPU */
+  #cpu {
+    color: #ffcc00;
+  }
+  
+  #cpu:hover {
+    color: #e68a00;
+  }
+  
+  /* Memory */
+  #memory {
+    color: #66ff99;
+  }
+  
+  #memory:hover {
+    color: #2e8b57;
+  }
+  
+  /* Network */
+  #network {
+    color: #4da6ff;
+  }
+  
+  #network:hover {
+    color: #0066cc;
+  }
+  
+  #network .wifi {
+
+  }
+  
+  #network .disconnected {
+    color: #ff4d4d;
+  }
+  
+  /* Battery */
+  #battery {
+    color: #ffcc00;
+  }
+  
+  #battery-charging {
+    color: #66cc66;
+  }
+  
+  #battery .full {
+    color: #4CAF50;
+  }
+  
+  /* Pulseaudio */
+  #pulseaudio {
+    color: #cce7ff;
+  }
+  
+  #pulseaudio:hover {
+    color: #00b5ff;
+  }
+  
+  #pulseaudio .mute {
+    color: #ff6666;
+  }
+  
+  #pulseaudio .volume {
+  }
+  
+  /* Custom Modules */
+  
+  /* #custom/hostname {
+    color: #f1c40f;
+  }
+  
+  #custom/hostname:hover {
+    color: #e67e22;
+  }
+  
+  #custom/uptime {
+    color: #2ecc71;
+  }
+  
+  #custom/uptime:hover {
+    color: #27ae60;
+  }
+  */
+  /* Icon Styles */
+  
+  #module .icon {
+    font-size: 18px;
+    color: inherit;
+  }
+  
+  #icon-bluetooth {
+    color: #4dabf7;
+  }
+  
+  #icon-wifi {
+    color: #ffab00;
+  }
+  
+  /* Tooltip Styles */
+  #tooltip {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+    padding: 5px;
+    border-radius: 5px;
+  }  
+  
+
+  .modules-right * {
+    /* padding-right: 10px; */
+    /* min-width: 66px; */
+    padding-right: 10px;
+    font-size: 15px;
+  }
+
