@@ -39,16 +39,14 @@ set $config $editor ~/.dotfiles
 #bindswitch lid:on output eDP-1 disable
 #bindswitch lid:off output eDP-1 enable
 
-exec swayidle -w \
-	timeout 300 'swaylock -f -c 111111' \
-	timeout 600 'swaymsg "output * dpms off"' \
-		resume 'swaymsg "output * dpms on"' \
-	before-sleep 'swaylock -f -c 111111' \
-    lock 'swaylock -f' \
-    inhibitor-lock 'swaylock -f'
+    exec swayidle -w \
+        timeout 300 'swaylock -f -c 111111' \
+        timeout 600 'swaymsg "output * dpms off"' \
+            resume 'swaymsg "output * dpms on"' \
+        before-sleep 'swaylock -f -c 111111'
 
-bindswitch --reload --locked lid:on exec ~/.config/sway/lid.sh
-#bindswitch --reload --locked lid:off exec echo "lid:off"
+    bindswitch --reload --locked lid:on exec ~/.config/sway/lid.sh
+    #bindswitch --reload --locked lid:off exec echo "lid:off"
 
 #
 # This will lock your screen after 300 seconds of inactivity, then turn off
@@ -214,6 +212,7 @@ bindsym $mod+r mode "resize"
 
 ###
     bindsym $mod+o exec killall -SIGUSR2 waybar
+    bindsym $mod+Shift+o exec killall -SIGUSR1 waybar
     bindsym $mod+l exec swaylock -f -c 111111
     bindsym XF86ScreenSaver exec swaylock -f -c 111111
 
