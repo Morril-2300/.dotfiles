@@ -87,8 +87,8 @@
       "tooltip-format-disconnected": "Disconnected"
     },
     "pulseaudio": {
-      "format": "{volume:3}% {icon} ",
-      "format-bluetooth": "{volume:3}% {icon}",
+      "format": "{volume:3}% {icon}",
+      "format-bluetooth": "{volume:3}%{icon}",
       "format-muted": "  0% 󰖁",
       "format-icons": {
         "default": [
@@ -97,7 +97,8 @@
           "󰕾"
         ]
       },
-      "on-click": "pavucontrol",
+      "on-click": "exec wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+      "on-right-click": "pavucontrol",
       "scroll-step": 5,
       "smooth-scrolling-threshold": 2
     },
