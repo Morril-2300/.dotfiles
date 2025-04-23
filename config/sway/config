@@ -45,7 +45,7 @@ set $config $editor ~/.dotfiles
             resume 'swaymsg "output * dpms on"' \
         before-sleep 'swaylock -f -c 111111'
 
-    bindswitch --reload --locked lid:on exec ~/.config/sway/lid.sh
+    bindswitch --reload --locked lid:on exec swaylock -f -c 111111
     #bindswitch --reload --locked lid:off exec echo "lid:off"
 
 #
