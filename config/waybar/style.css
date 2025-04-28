@@ -11,11 +11,28 @@
     /* opacity: 1;  */
   }
   
- 
+  .module {
+    background: #444;
+    border-radius: 10px;
+  }
+
+
+  .modules-right * {
+    /* padding-right: 10px; */
+    /* min-width: 66px; */
+    padding-right: 10px;
+    padding-left: 6px;
+    font-size: 15px;
+  }
 
   /* Module Specific Styles */
+
+  #tray {
+    padding-left: 10px;
+    padding-right: 2px;
+  }
+
   #workspaces button {
-    min-width: 20px;
     font-size: 18px;
   }
   #workspaces button.focused {
@@ -30,7 +47,7 @@
     color: #ffcc00;
     font-size: 14px;
     padding-left: 10px;
-    padding-right: 10px;
+    padding-right: 14px;
   }
   
   #clock:hover {
@@ -63,10 +80,7 @@
   #network:hover {
     color: #0066cc;
   }
-  
-  #network .wifi {
 
-  }
   
   #network .disconnected {
     color: #ff4d4d;
@@ -103,22 +117,17 @@
   
   /* Custom Modules */
   
-  /* #custom/hostname {
-    color: #f1c40f;
+  #custom-hostname {
+    color: #44d4ee;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   
-  #custom/hostname:hover {
-    color: #e67e22;
+  #custom-uptime {
+    padding-left: 10px;
+    padding-right: 10px;
   }
-  
-  #custom/uptime {
-    color: #2ecc71;
-  }
-  
-  #custom/uptime:hover {
-    color: #27ae60;
-  }
-  */
+ 
   /* Icon Styles */
   
   #module .icon {
@@ -141,12 +150,3 @@
     padding: 5px;
     border-radius: 5px;
   }  
-  
-
-  .modules-right * {
-    /* padding-right: 10px; */
-    /* min-width: 66px; */
-    padding-right: 10px;
-    font-size: 15px;
-  }
-

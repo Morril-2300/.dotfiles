@@ -26,7 +26,7 @@ set $config $editor ~/.dotfiles
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-#output * bg  fill
+output * bg /usr/share/backgrounds/sway-custom/waterfall-kassel.jpg fill
 #
 # Example configuration:
 #
