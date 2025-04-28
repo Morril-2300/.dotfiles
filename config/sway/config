@@ -40,7 +40,7 @@ output * bg /usr/share/backgrounds/sway-custom/waterfall-kassel.jpg fill
 #bindswitch lid:off output eDP-1 enable
 
     exec swayidle -w \
-        timeout 300 'swaylock -C ~/.config/sway/swaylock.conf' \
+        timeout 180 'swaylock -C ~/.config/sway/swaylock.conf --grace 240' \
         timeout 600 'swaymsg "output * dpms off"' \
             resume 'swaymsg "output * dpms on"' \
         before-sleep 'swaylock -C ~/.config/sway/swaylock.conf'
