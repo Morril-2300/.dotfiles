@@ -1,0 +1,7 @@
+configuration {
+ modi: "drun";
+ combi-modi: "drun,ssh";
+ show-icons: true;
+ }
+//@theme "dark"
+@theme "/usr/share/rofi/themes/gruvbox-dark-hard.rasi"

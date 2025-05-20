@@ -26,7 +26,7 @@ set $config $editor ~/.dotfiles
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /usr/share/backgrounds/sway-custom/waterfall-kassel.jpg fill
+output * bg ~/Pictures/background fill
 #
 # Example configuration:
 #
@@ -36,16 +36,14 @@ output * bg /usr/share/backgrounds/sway-custom/waterfall-kassel.jpg fill
 
 ### Idle configuration
 #
-#bindswitch lid:on output eDP-1 disable
-#bindswitch lid:off output eDP-1 enable
+set $lock swaylock -C ~/.config/sway/swaylock.conf
 
     exec swayidle -w \
-        timeout 180 'swaylock -C ~/.config/sway/swaylock.conf --grace 240' \
-        timeout 600 'swaymsg "output * dpms off"' \
-            resume 'swaymsg "output * dpms on"' \
-        before-sleep 'swaylock -C ~/.config/sway/swaylock.conf'
+        timeout 180 'exec $lock --grace 240' \
+        timeout 250 'swaymsg "output * power off"' \
+        resume 'swaymsg "output * power on"'
 
-    bindswitch --reload --locked lid:on exec swaylock -C ~/.config/sway/swaylock.conf
+    bindswitch --reload --locked lid:on exec $lock
     #bindswitch --reload --locked lid:off exec echo "lid:off"
 
 #
@@ -213,8 +211,8 @@ bindsym $mod+r mode "resize"
 ###
     bindsym $mod+o exec killall -SIGUSR2 waybar
     bindsym $mod+Shift+o exec killall -SIGUSR1 waybar
-    bindsym $mod+l exec swaylock -C ~/.config/sway/swaylock.conf
-    bindsym XF86ScreenSaver exec swaylock -C ~/.config/sway/swaylock.conf
+    bindsym $mod+l exec $lock
+    bindsym XF86ScreenSaver $lock
 
 #
 # Autostart:

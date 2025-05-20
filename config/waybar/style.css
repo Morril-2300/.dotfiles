@@ -140,6 +140,11 @@
     color: #ffab00;
   }
   
+  #idle_inhibitor {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
   /* Tooltip Styles */
   #tooltip {
     background-color: rgba(0, 0, 0, 0.7);

@@ -138,7 +138,8 @@
     "position": "bottom",
     "height": 30,
     "modules-left": [
-      "custom/hostname"
+      "custom/hostname",
+      "idle_inhibitor"
     ],
     "modules-center": [
       "custom/uptime"
@@ -156,6 +157,13 @@
       "exec": "uptime -p",
       "interval": 60,
       "format": "󰔛 {}"
+    },
+    "idle_inhibitor": {
+      "format": "{icon}",
+      "format-icons": {
+          "activated": "󱙱 inhibited",
+          "deactivated": "󰌾 idle lock"
+      }
     }
   }
 ]
