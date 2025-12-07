@@ -78,7 +78,7 @@
     },
     "network": {
       "format-wifi": "{signalStrength:3}% 󰖩",
-      "format-ethernet": " eth 󰈀",
+      "format-ethernet": "eth. 󰈀",
       "format-disconnected": " --- 󰖪",
       "format": " {download}  {upload}",
       "tooltip-format-wifi": "{essid}",
@@ -130,7 +130,7 @@
           "󰂅"
         ]
       },
-      "interval": 10
+      "interval": 2
     }
   },
   {
@@ -159,6 +159,7 @@
       "format": "󰔛 {}"
     },
     "idle_inhibitor": {
+      "what": "idle",
       "format": "{icon}",
       "format-icons": {
           "activated": "󱙱 inhibited",
