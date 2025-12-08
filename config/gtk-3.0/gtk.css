@@ -1,0 +1,19 @@
+.thunar,
+.thunar .view, 
+.thunar toolbar,
+.thunar scrolledwindow.sidebar treeview.view {
+    background-color: #0a0a0d;
+}
+
+.thunar .view widget:selected,
+.thunar treeview *:selected
+{
+    background-color: #9ea1b9;
+}
+
+
+.thunar .view .rubberband, 
+.thunar treeview rubberband,
+.thunar scrolledwindow.sidebar treeview.view .rubberband {
+    background-color: rgba(10, 10, 13, 0.9);
+}
