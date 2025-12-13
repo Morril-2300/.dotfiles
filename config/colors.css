@@ -1,0 +1,15 @@
+@define-color transblack    rgba(64, 64, 64, 0.8);
+@define-color bright        rgba(216, 216, 216, 1);
+
+@define-color dark-green        #29665d;
+@define-color violet            #e266ff;
+
+@define-color black             #000000;
+@define-color grey-dark         #404040;
+@define-color grey-light        #808080;
+@define-color white             #ffffff;
+
+@define-color enby-yellow   	#fef32e;
+@define-color enby-white    	#ffffff;
+@define-color enby-purple   	#9c58d1;
+@define-color enby-black    	#000000;

@@ -1,154 +1,184 @@
 /* General Styling */
 
+@import "../colors.css";
+
 
 * {
-    font-family: monospace, "JetBrainsMono Nerd Font";
-    /* background: transparent; */
-  }
-
-  #waybar {
-    background: rgba(0, 0, 0, 0.8);
-    /* opacity: 1;  */
-  }
-  
-  .module {
-    background: #444;
-    border-radius: 10px;
-  }
+    font-family: "Nerd-Font";
+    background: transparent;
+    font-weight: 700;
+    font-size: 12pt;
+    box-shadow: none;
+    color: @bright;
+}
 
 
-  .modules-right * {
-    /* padding-right: 10px; */
-    /* min-width: 66px; */
-    padding-right: 10px;
-    padding-left: 6px;
+/* LEFT ******************************/
+#g-arch,
+#g-screen,
+#g-workspaces,
+#g-hardware {
+    background: @transblack;
+    border-radius: 15pt;
+    margin-right: 10px;
+}
+
+/* arch */
+#custom-arch {
+    padding: 0 8pt;
+    border-radius: 15pt;
+}
+#custom-arch:hover {
+    color: @transblack;
+    background: linear-gradient(@enby-yellow, @enby-white, @enby-purple, @enby-black);
+}
+
+/* screen */
+#g-screen,
+#idle_inhibitor,
+#g-backlight {
+    padding: 0 5pt;
+}
+
+#backlight.percent {
+    font-size: 15pt;
+    margin-left: 3pt;
+}
+
+/* workspaces */
+#g-workspaces {
+    padding: 0 5pt;
+}
+
+#workspaces button {
+    border-radius: 15pt;
+    padding: 2pt;
+    opacity: 1;
+}
+
+#workspaces button.persistent {
+    opacity: 0.7;
+}
+
+#workspaces button.empty {
+    opacity: 0.2;
+}
+
+#workspaces button.active {
+    opacity: 1;
+}
+
+#workspaces button:hover {
+    opacity: 1;
+    color: @bright;
+}
+
+#workspaces button.urgent {
+    color: #cc3333;
+}
+
+/* hardware */
+
+#g-hardware {
+    padding: 0 5pt;
+}
+#g-hardware * {
+    padding: 0 3pt;
+}
+
+/* CENTER ***********************/
+
+#clock {
+    background: @transblack;
+    border-radius: 15pt;
+    color: @bright;
     font-size: 15px;
-  }
+    padding: 0 12px;
+}
 
-  /* Module Specific Styles */
+/* RIGHT ************************/
 
-  #tray {
-    padding-left: 10px;
-    padding-right: 2px;
-  }
+#g-right {
+    background: @transblack;
+    border-radius: 15pt;
+    padding: 0 5pt;
+}
 
-  #workspaces button {
-    font-size: 18px;
-  }
-  #workspaces button.focused {
-    background: #29665d;
-  } 
-  #workspaces button.urgent {
-    background-color: #cc3333;
-  }
+#g-right * {
+    padding: 0 3pt;
+}
 
-  /* Clock */
-  #clock {
-    color: #ffcc00;
-    font-size: 14px;
-    padding-left: 10px;
-    padding-right: 14px;
-  }
-  
-  #clock:hover {
-    color: #f15f99;
-  }
-  
-  /* CPU */
-  #cpu {
-    color: #ffcc00;
-  }
-  
-  #cpu:hover {
-    color: #e68a00;
-  }
-  
-  /* Memory */
-  #memory {
-    color: #66ff99;
-  }
-  
-  #memory:hover {
-    color: #2e8b57;
-  }
-  
-  /* Network */
-  #network {
-    color: #4da6ff;
-  }
-  
-  #network:hover {
-    color: #0066cc;
-  }
+#network {
+    background: rgb(8, 8, 2);
+}
 
-  
-  #network .disconnected {
-    color: #ff4d4d;
-  }
-  
-  /* Battery */
-  #battery {
-    color: #ffcc00;
-  }
-  
-  #battery-charging {
-    color: #66cc66;
-  }
-  
-  #battery .full {
-    color: #4CAF50;
-  }
-  
-  /* Pulseaudio */
-  #pulseaudio {
-    color: #cce7ff;
-  }
-  
-  #pulseaudio:hover {
-    color: #00b5ff;
-  }
-  
-  #pulseaudio .mute {
-    color: #ff6666;
-  }
-  
-  /* Custom Modules */
-  
-  #custom-hostname {
-    color: #44d4ee;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  
-  #custom-uptime {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
- 
-  /* Icon Styles */
-  
-  #module .icon {
-    font-size: 18px;
-    color: inherit;
-  }
-  
-  #icon-bluetooth {
-    color: #4dabf7;
-  }
-  
-  #icon-wifi {
-    color: #ffab00;
-  }
-  
-  #idle_inhibitor {
-    padding-left: 8px;
-    padding-right: 8px;
-  }
+#tray { /** TO DO ***/
+    margin-left: 10px;
+    padding: 0 5px;
+    background: @transblack;
+    border-radius: 15pt;
+}
+#tray * {
+    padding: 0 5px;
+}
 
-  /* Tooltip Styles */
-  #tooltip {
-    background-color: rgba(0, 0, 0, 0.7);
-    color: #ffffff;
-    padding: 5px;
-    border-radius: 5px;
-  }  
+
+
+/* Tooltip Styles ************************/
+tooltip * {
+    font-size: 12pt;
+}
+
+tooltip {
+    background-color: black;
+    color: white;
+    padding: 2px;
+    border-radius: 15pt;
+    opacity: 1;
+    outline: none;
+}
+
+/* FONT SIZE FIXING ***********************/
+
+#custom-arch,
+#idle_inhibitor.activated,
+#backlight,
+#cpu,
+#memory
+{
+    font-size: 20pt;
+}
+
+#pulseaudio {
+    font-size: 16pt;
+}
+
+#temperature,
+#battery {
+    font-size:14pt;
+}
+
+#workspaces,
+#workspaces button,
+#workspaces * {
+    font-size: 18pt;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#idle_inhibitor.deactivated {
+    font-size: 15pt;
+    margin: 0 2pt;
+}
+
+#cpu.percent,
+#temperature.percent,
+#memory.percent,
+#backlight.percent,
+#battery.percent,
+#pulseaudio.percent
+{
+    font-size: 12pt;
+}

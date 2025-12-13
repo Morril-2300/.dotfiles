@@ -1,4 +1,4 @@
 #!/bin/zsh
 
 killall waybar
-exec waybar -c ~/.config/waybar/config -s ~/.config/waybar/style.css
+exec waybar -c ~/.config/waybar/config.jsonc -s ~/.config/waybar/style.css

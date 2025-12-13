@@ -1,0 +1,134 @@
+{
+    "custom/arch": {
+        "format": "",
+        "exec": "echo \"$(whoami)@$(cat /etc/hostname)\"",
+        "interval": "once",
+        "tooltip-format": "{}"
+    },
+
+    "idle_inhibitor": {
+        "what": "idle",
+        "format": "{icon}",
+        "format-icons": {
+            "activated": "󱙲",
+            "deactivated": "󰍁"
+        },
+        "tooltip-format-activated": "idle lock disabled",
+        "tooltip-format-deactivated": "idle lock enabled"
+    },
+
+    "backlight": {
+        "device": "intel_backlight",
+        "format": "{icon}",
+        "format-icons": [
+            "","","","","","","","","","","","","","","󰽢"
+        ],
+        "scroll-step": 5,
+        "smooth-scrolling-threshold": 1,
+        "interval": "once",
+        "tooltip": false
+    },
+    "backlight#percent" : {
+        "device": "intel_backlight",
+        "format": "{percent}%",
+        "scroll-step": 5,
+        "smooth-scrolling-threshold": 1,
+        "interval": "once",
+        "tooltip": false
+    },
+
+    "hyprland/workspaces": {
+        "persistent-workspaces": {
+            "*": 10
+        },
+        "format": "{icon}",
+        "format-icons": {
+            "active": "",
+            "persistent": "",
+            "empty": "",
+            "alert": "󰗖"
+        },
+        "max-width": 50,
+        "on-click": "activate",
+        "on-scroll-down": "",
+        "on-scroll-up": ""
+    },
+
+    "memory": {
+        "format": "",
+        "tooltip": false,
+        "interval": "once"
+    },
+    "memory#percent": {
+        "format": "{percentage}%",
+        "tooltip-format": " {used:2.1f} G /{total:2.1f} G\n󰾴 {swapUsed:2.1f} G / {swapTotal:2.1f} G",
+        "interval": 10
+    },
+
+    "cpu": {
+        "format": "",
+        "tooltip": false,
+        "interval": "once"
+    },
+    "cpu#percent": {
+        "format": "{usage}%",
+        "interval": 10
+    },
+
+    "temperature": {
+        "thermal-zone": 0,
+        "tooltip": false,
+        "format": "{icon}",
+        "format-icons": ["","","","",""],
+        "interval": 30
+    },
+    "temperature#percent": {
+        "thermal-zone": 0,
+        "format": "{temperatureC}°C",
+        "interval": 10
+    },
+
+    "clock": {
+        "format": "󰥔 {:%F %T %Z}",
+        "interval": 1,
+        "tooltip": false
+    },
+
+    "battery": {
+        "format": "{icon}",
+        "format-charging": "󰂄",
+        "format-icons": [ "󰂎","󰁺","󰁻","󰁼","󰁽","󰁾","󰁿","󰂀","󰂁","󰂂","󰁹" ],
+        "interval": 2
+    },
+    "battery#percent": {
+        "format": "{capacity}%",
+        "format-charging": "{capacity}%",
+        "interval": 10
+    },
+
+    "pulseaudio": {
+        "format": "{icon}",
+        "format-icons": {
+            "headphone": "",
+            "headset": "",
+            "headphone-muted": "󰟎",
+            "headset-muted": "󰟎",
+            "default": "󰕾",
+            "default-muted": "󰖁",
+            "bluetooth": "󰗾",
+            "bluetooth-muted": "󰗿"
+        },
+        "on-click": "exec wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+        "on-click-right": "pavucontrol",
+        "scroll-step": 5,
+        "smooth-scrolling-threshold": 3
+    },
+    "pulseaudio#percent": {
+        "format-muted": "",
+        "format": "{volume}%",
+        "on-click": "exec wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+        "on-click-right": "pavucontrol",
+        "scroll-step": 5,
+        "smooth-scrolling-threshold": 3
+    }
+}

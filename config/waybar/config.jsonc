@@ -1,0 +1,94 @@
+{
+    "include": [
+        "~/.config/waybar/modules.jsonc"
+    ],
+    "layer": "top",
+    "position": "top",
+    "modules-left": [
+        "group/g-arch",
+        "group/g-screen",
+        "group/g-workspaces",
+        "group/g-hardware"
+    ],
+    "modules-center": [
+        "clock"
+    ],
+    "modules-right": [
+        "group/g-right",
+        "tray"
+    ],
+
+    "group/g-arch": {
+        "orientation": "horizontal",
+        "modules": [
+            "custom/arch"
+        ]
+    },
+    "group/g-screen": {
+        "orientation": "horizontal",
+        "modules": [
+            "idle_inhibitor",
+            "group/g-backlight"
+        ]
+    },
+    "group/g-backlight": {
+        "orientation": "horizontal",
+        "modules": [
+            "backlight",
+            "backlight#percent"
+        ],
+        "drawer": {
+            "click-to-reveal": true
+        }
+    },
+    "group/g-workspaces": {
+        "orientation": "horizontal",
+        "modules": [
+            "hyprland/workspaces"
+        ]
+    },
+
+    "group/g-hardware": {
+        "orientation": "horizontal",
+        "modules": [
+            "group/g-memory",
+            "group/g-cpu",
+            "group/g-temperature"
+        ]
+    },
+    "group/g-memory": {
+        "orientation": "horizontal",
+        "modules": ["memory", "memory#percent"]
+    },
+    "group/g-cpu": {
+        "orientation": "horizontal",
+        "modules": ["cpu", "cpu#percent"]
+    },
+    "group/g-temperature": {
+        "orientation": "horizontal",
+        "modules": ["temperature", "temperature#percent"]
+    },
+
+    "group/g-right": {
+        "orientation": "horizontal",
+        "modules": ["network", "group/g-pulseaudio", "group/g-battery"]
+    },
+    "group/g-pulseaudio": {
+        "orientation": "horizontal",
+        "modules": ["pulseaudio", "pulseaudio#percent"]
+    },
+    "group/g-battery": {
+        "orientation": "horizontal",
+        "modules": ["battery", "battery#percent"]
+    },
+
+
+    "network": {
+        "format-wifi": "{signalStrength}% 󰖩",
+        "format-ethernet": "eth. 󰈀",
+        "format-disconnected": " --- 󰖪",
+        "format": " {download}  {upload}",
+        "tooltip-format-wifi": "{essid}",
+        "tooltip-format-disconnected": "Disconnected"
+    }
+}
