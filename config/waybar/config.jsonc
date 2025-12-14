@@ -4,6 +4,7 @@
     ],
     "layer": "top",
     "position": "top",
+    "height": "30",
     "modules-left": [
         "group/g-arch",
         "group/g-screen",
@@ -33,10 +34,7 @@
     },
     "group/g-backlight": {
         "orientation": "horizontal",
-        "modules": [
-            "backlight",
-            "backlight#percent"
-        ],
+        "modules": ["backlight#icon","backlight"],
         "drawer": {
             "click-to-reveal": true
         }
@@ -58,37 +56,53 @@
     },
     "group/g-memory": {
         "orientation": "horizontal",
-        "modules": ["memory", "memory#percent"]
+        "modules": ["memory#icon", "memory"]
     },
     "group/g-cpu": {
         "orientation": "horizontal",
-        "modules": ["cpu", "cpu#percent"]
+        "modules": ["cpu#icon", "cpu"]
     },
     "group/g-temperature": {
         "orientation": "horizontal",
-        "modules": ["temperature", "temperature#percent"]
+        "modules": ["temperature#icon", "temperature"]
     },
 
     "group/g-right": {
         "orientation": "horizontal",
-        "modules": ["network", "group/g-pulseaudio", "group/g-battery"]
+        "modules": ["group/g-network", "group/g-pulseaudio", "group/g-battery"]
+    },
+    "group/g-network": {
+        "orientation": "horizontal",
+        "modules": ["network#icon", "network"]
     },
     "group/g-pulseaudio": {
         "orientation": "horizontal",
-        "modules": ["pulseaudio", "pulseaudio#percent"]
+        "modules": ["pulseaudio#icon", "pulseaudio"]
     },
     "group/g-battery": {
         "orientation": "horizontal",
-        "modules": ["battery", "battery#percent"]
+        "modules": ["battery#icon", "battery"]
     },
 
 
+    "network#icon": {
+        "format-wifi": "{icon}",
+        "format-icons": {
+            "wifi": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
+            "disconnected": "󰤭",
+            "ethernet": "󰈀"
+        },
+        "format-disconnected": "󰤭",
+        "format": " {download}  {upload}",
+        "tooltip-format-disconnected": "Disconnected",
+        "on-click": "nm-connection-editor"
+    },
     "network": {
-        "format-wifi": "{signalStrength}% 󰖩",
+        "format-wifi": "{essid}",
         "format-ethernet": "eth. 󰈀",
         "format-disconnected": " --- 󰖪",
         "format": " {download}  {upload}",
-        "tooltip-format-wifi": "{essid}",
-        "tooltip-format-disconnected": "Disconnected"
+        "tooltip-format-disconnected": "Disconnected",
+        "on-click": "nm-connection-editor"
     }
 }

@@ -17,7 +17,7 @@
         "tooltip-format-deactivated": "idle lock enabled"
     },
 
-    "backlight": {
+    "backlight#icon": {
         "device": "intel_backlight",
         "format": "{icon}",
         "format-icons": [
@@ -28,7 +28,7 @@
         "interval": "once",
         "tooltip": false
     },
-    "backlight#percent" : {
+    "backlight" : {
         "device": "intel_backlight",
         "format": "{percent}%",
         "scroll-step": 5,
@@ -54,35 +54,35 @@
         "on-scroll-up": ""
     },
 
-    "memory": {
+    "memory#icon": {
         "format": "",
         "tooltip": false,
         "interval": "once"
     },
-    "memory#percent": {
+    "memory": {
         "format": "{percentage}%",
         "tooltip-format": " {used:2.1f} G /{total:2.1f} G\n󰾴 {swapUsed:2.1f} G / {swapTotal:2.1f} G",
         "interval": 10
     },
 
-    "cpu": {
+    "cpu#icon": {
         "format": "",
         "tooltip": false,
         "interval": "once"
     },
-    "cpu#percent": {
+    "cpu": {
         "format": "{usage}%",
         "interval": 10
     },
 
-    "temperature": {
+    "temperature#icon": {
         "thermal-zone": 0,
         "tooltip": false,
         "format": "{icon}",
         "format-icons": ["","","","",""],
         "interval": 30
     },
-    "temperature#percent": {
+    "temperature": {
         "thermal-zone": 0,
         "format": "{temperatureC}°C",
         "interval": 10
@@ -94,19 +94,19 @@
         "tooltip": false
     },
 
-    "battery": {
+    "battery#icon": {
         "format": "{icon}",
         "format-charging": "󰂄",
         "format-icons": [ "󰂎","󰁺","󰁻","󰁼","󰁽","󰁾","󰁿","󰂀","󰂁","󰂂","󰁹" ],
         "interval": 2
     },
-    "battery#percent": {
+    "battery": {
         "format": "{capacity}%",
         "format-charging": "{capacity}%",
         "interval": 10
     },
 
-    "pulseaudio": {
+    "pulseaudio#icon": {
         "format": "{icon}",
         "format-icons": {
             "headphone": "",
@@ -123,7 +123,7 @@
         "scroll-step": 5,
         "smooth-scrolling-threshold": 3
     },
-    "pulseaudio#percent": {
+    "pulseaudio": {
         "format-muted": "",
         "format": "{volume}%",
         "on-click": "exec wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",

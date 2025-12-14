@@ -40,9 +40,11 @@
     padding: 0 5pt;
 }
 
-#backlight.percent {
-    font-size: 15pt;
+#backlight {
     margin-left: 3pt;
+}
+#backlight.icon {
+    margin: 0
 }
 
 /* workspaces */
@@ -108,10 +110,6 @@
     padding: 0 3pt;
 }
 
-#network {
-    background: rgb(8, 8, 2);
-}
-
 #tray { /** TO DO ***/
     margin-left: 10px;
     padding: 0 5px;
@@ -142,19 +140,20 @@ tooltip {
 
 #custom-arch,
 #idle_inhibitor.activated,
-#backlight,
-#cpu,
-#memory
+#backlight.icon,
+#cpu.icon,
+#memory.icon,
+#network.icon
 {
     font-size: 20pt;
 }
 
-#pulseaudio {
+#pulseaudio.icon {
     font-size: 16pt;
 }
 
-#temperature,
-#battery {
+#temperature.icon,
+#battery.icon {
     font-size:14pt;
 }
 
@@ -173,12 +172,13 @@ tooltip {
     margin: 0 2pt;
 }
 
-#cpu.percent,
-#temperature.percent,
-#memory.percent,
-#backlight.percent,
-#battery.percent,
-#pulseaudio.percent
+#cpu,
+#temperature,
+#memory,
+#backlight,
+#battery,
+#pulseaudio,
+#network
 {
     font-size: 12pt;
 }
