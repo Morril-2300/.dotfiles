@@ -94,16 +94,25 @@
         "tooltip": false
     },
 
-    "battery#icon": {
-        "format": "{icon}",
-        "format-charging": "󰂄",
-        "format-icons": [ "󰂎","󰁺","󰁻","󰁼","󰁽","󰁾","󰁿","󰂀","󰂁","󰂂","󰁹" ],
-        "interval": 2
+
+    "network#icon": {
+        "format-wifi": "{icon}",
+        "format-icons": {
+            "wifi": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
+            "disconnected": "󰤭",
+            "ethernet": "󰈀"
+        },
+        "format-disconnected": "󰤭",
+        "tooltip": false,
+        "on-click": "nm-connection-editor"
     },
-    "battery": {
-        "format": "{capacity}%",
-        "format-charging": "{capacity}%",
-        "interval": 10
+    "network": {
+        "format-wifi": "{essid}",
+        "format-ethernet": " {bandwidthDownBits}  {bandwidthUpBits}",
+        "format-disconnected": "disconnected",
+        "tooltip-format": "{ipaddr}",
+        "on-click": "nm-connection-editor",
+        "tooltip": true
     },
 
     "pulseaudio#icon": {
@@ -130,5 +139,17 @@
         "on-click-right": "pavucontrol",
         "scroll-step": 5,
         "smooth-scrolling-threshold": 3
+    },
+
+    "battery#icon": {
+        "format": "{icon}",
+        "format-charging": "󰂄",
+        "format-icons": [ "󰂎","󰁺","󰁻","󰁼","󰁽","󰁾","󰁿","󰂀","󰂁","󰂂","󰁹" ],
+        "interval": 2
+    },
+    "battery": {
+        "format": "{capacity}%",
+        "format-charging": "{capacity}%",
+        "interval": 10
     }
 }
