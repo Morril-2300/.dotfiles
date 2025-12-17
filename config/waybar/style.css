@@ -182,3 +182,18 @@ tooltip {
 {
     font-size: 12pt;
 }
+
+
+
+/* POP UPS ****************************/
+
+menu {
+    background-color: @transblack;
+    color: #ffffff;
+    border-radius: 6pt;
+    box-shadow: none;
+}
+menu *:hover {
+    background-color: rgba(32, 32, 32, 0.8);
+    opacity: 1;
+}
