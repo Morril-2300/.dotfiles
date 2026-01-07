@@ -1,5 +1,11 @@
 #!/usr/bin/env bash
 
+# check if we are executed in the correct directory
+if [[ ! -f ./cp_etc.sh ]]; then
+	echo "PANIC: I am not executed in the correct directory!!!"
+	exit -1
+fi
+
 if [ ! -d "etc.backup" ]; then
   mkdir etc.backup
 fi
