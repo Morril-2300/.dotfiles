@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 ## from github.com/second2050/dotfiles
+## modified to fit the needs of @morril-2300
 
 # check if we are executed in the correct directory
 if [[ ! -f ./setup_symlinks.sh ]]; then
