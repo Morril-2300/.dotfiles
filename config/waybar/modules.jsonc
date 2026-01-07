@@ -28,8 +28,12 @@
         "device": "intel_backlight",
         "format": "{icon}",
         "format-icons": [
-            "","","","","","","","","","","","","","","󰽢"
+            "","","","","","","","","","","","","",""
         ],
+        "format-full": "",
+        "states": {
+            "full": 100
+        },
         "scroll-step": 5,
         "smooth-scrolling-threshold": 1,
         "interval": "once",
