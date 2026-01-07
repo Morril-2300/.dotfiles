@@ -102,21 +102,60 @@
     },
 
 
-    "network#icon": {
-        "format-wifi": "{icon}",
+    "network#wifi-icon": {
+        "interface": "wlp*",
+        "format": "{icon}",
         "format-icons": {
             "wifi": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
             "disconnected": "󰤭",
+            "ethernet": ""
+        },
+        "tooltip-format": "{signalStrength}%",
+        "on-click": "nm-connection-editor"
+    },
+    "network#wifi": {
+        "interface": "wlp*",
+        "format": "",
+        "format-wifi": "{essid}",
+        "format-disconnected": "disconnected",
+        "tooltip-format": "{ipaddr}",
+        "on-click": "nm-connection-editor",
+        "tooltip": true
+    },
+
+    "network#eth5-icon": {
+        "interface": "enp5*",
+        "format": "{icon}",
+        "format-icons": {
+            "disconnected": "",
             "ethernet": "󰈀"
         },
-        "format-disconnected": "󰤭",
         "tooltip": false,
         "on-click": "nm-connection-editor"
     },
-    "network": {
-        "format-wifi": "{essid}",
+    "network#eth5": {
+        "interface": "enp5*",
+        "format": "",
         "format-ethernet": " {bandwidthDownBits}  {bandwidthUpBits}",
-        "format-disconnected": "disconnected",
+        "tooltip-format": "{ipaddr}",
+        "on-click": "nm-connection-editor",
+        "tooltip": true
+    },
+
+    "network#eth1-icon": {
+        "interface": "enp1*",
+        "format": "{icon}",
+        "format-icons": {
+            "disconnected": "",
+            "ethernet": "󰈀"
+        },
+        "tooltip": false,
+        "on-click": "nm-connection-editor"
+    },
+    "network#eth1": {
+        "interface": "enp1*",
+        "format": "",
+        "format-ethernet": " {bandwidthDownBits}  {bandwidthUpBits}",
         "tooltip-format": "{ipaddr}",
         "on-click": "nm-connection-editor",
         "tooltip": true

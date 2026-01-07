@@ -17,7 +17,8 @@
 #g-arch,
 #g-screen,
 #g-workspaces,
-#g-hardware {
+#g-hardware,
+#g-network {
     background: @transblack;
     border-radius: 15pt;
     margin-right: 10px;
@@ -100,6 +101,7 @@
 
 /* RIGHT ************************/
 
+#g-network ,
 #g-right {
     background: @transblack;
     border-radius: 15pt;
@@ -108,6 +110,12 @@
 
 #g-right * {
     padding: 0 3pt;
+}
+
+#network.wifi-icon,
+#network.eth1-icon,
+#network.eth5-icon {
+    padding: 0 5pt;
 }
 
 #tray { /** TO DO ***/
@@ -138,12 +146,27 @@ tooltip {
 
 /* FONT SIZE FIXING ***********************/
 
+#cpu,
+#temperature,
+#memory,
+#backlight,
+#battery,
+#pulseaudio,
+#network.wifi,
+#network.eth1,
+#network.eth5
+{
+    font-size: 12pt;
+}
+
 #custom-arch,
 #idle_inhibitor.activated,
 #backlight.icon,
 #cpu.icon,
 #memory.icon,
-#network.icon
+#network.wifi-icon,
+#network.eth1-icon,
+#network.eth5-icon
 {
     font-size: 20pt;
 }
@@ -171,19 +194,6 @@ tooltip {
     font-size: 15pt;
     margin: 0 2pt;
 }
-
-#cpu,
-#temperature,
-#memory,
-#backlight,
-#battery,
-#pulseaudio,
-#network
-{
-    font-size: 12pt;
-}
-
-
 
 /* POP UPS ****************************/
 

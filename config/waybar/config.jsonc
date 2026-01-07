@@ -17,6 +17,7 @@
         "clock"
     ],
     "modules-right": [
+        "group/g-network",
         "group/g-right",
         "tray"
     ],
@@ -71,11 +72,26 @@
 
     "group/g-right": {
         "orientation": "horizontal",
-        "modules": ["group/g-network", "group/g-pulseaudio", "group/g-battery"]
+        "modules": ["group/g-pulseaudio", "group/g-battery"]
     },
+
+
+    "group/g-eth1": {
+        "orientation": "horizontal",
+        "modules": ["network#eth1-icon", "network#eth1"]
+    },
+    "group/g-eth5": {
+        "orientation": "horizontal",
+        "modules": ["network#eth5-icon", "network#eth5"]
+    },
+    "group/g-wifi": {
+        "orientation": "horizontal",
+        "modules": ["network#wifi-icon", "network#wifi"]
+    },
+
     "group/g-network": {
         "orientation": "horizontal",
-        "modules": ["network#icon", "network"]
+        "modules": ["group/g-eth1", "group/g-eth5", "group/g-wifi"]
     },
     "group/g-pulseaudio": {
         "orientation": "horizontal",
