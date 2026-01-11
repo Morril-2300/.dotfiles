@@ -101,11 +101,15 @@
 
 /* RIGHT ************************/
 
-#g-network ,
+#g-network,
 #g-right {
     background: @transblack;
     border-radius: 15pt;
     padding: 0 5pt;
+}
+
+#g-network {
+    padding: 0 8pt 0 5pt;
 }
 
 #g-right * {
