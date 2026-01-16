@@ -112,6 +112,7 @@
         "format-icons": {
             "wifi": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
             "disconnected": "󰤭",
+            "linked": "󱚾",
             "ethernet": ""
         },
         "tooltip-format": "{signalStrength}%",
@@ -121,6 +122,7 @@
         "interface": "wlp*",
         "format": "",
         "format-wifi": "{essid}",
+        "format-linked": "connecting...",
         "format-disconnected": "disconnected",
         "tooltip-format": "{ipaddr}",
         "on-click": "nm-connection-editor",
