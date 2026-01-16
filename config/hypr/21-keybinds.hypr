@@ -11,6 +11,7 @@ bind = $mainMod, D, exec, $menu
 bind = $mainMod, K, exec, $passwords
 bind = $mainMod, E, exec, $fileManager
 bind = $mainMod, C, exec, $editor
+bind = $mainMod, I, exec, $settings
 bind = $mainMod, W, exec, $webbrowser
 bind = $mainMod, code:60, exec, $emoji
 

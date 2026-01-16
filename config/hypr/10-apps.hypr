@@ -12,6 +12,7 @@ $editor = code
 $passwords = keepassxc
 $webbrowser = firefox
 $emoji = rofimoji -s light
+$settings = $editor ~/.dotfiles
 
 #################
 ### AUTOSTART ###
