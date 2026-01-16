@@ -57,7 +57,7 @@
             "active": "",
             "persistent": "",
             "empty": "",
-            "alert": "󰗖"
+            "urgent": "󰗖"
         },
         "max-width": 50,
         "on-click": "activate",

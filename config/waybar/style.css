@@ -71,14 +71,15 @@
     opacity: 1;
 }
 
+#workspaces button.urgent {
+    animation: blink 1.5s infinite ease-in-out;
+}
+
 #workspaces button:hover {
     opacity: 1;
     color: @bright;
 }
 
-#workspaces button.urgent {
-    color: #cc3333;
-}
 
 /* hardware */
 
@@ -210,4 +211,16 @@ menu {
 menu *:hover {
     background-color: rgba(32, 32, 32, 0.8);
     opacity: 1;
+}
+
+@keyframes blink {
+    0% {
+           opacity: 1;
+    }
+    50% {
+           opacity: .1;
+    }
+    100% {
+           opacity: 1;
+    }
 }
