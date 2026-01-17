@@ -8,7 +8,7 @@
 $terminal = alacritty
 $fileManager = thunar
 $menu = rofi -show drun
-$editor = code
+$editor = vscodium
 $passwords = keepassxc
 $webbrowser = firefox
 $emoji = rofimoji -s light
