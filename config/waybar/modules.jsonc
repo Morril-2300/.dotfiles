@@ -197,11 +197,13 @@
         "format": "{icon}",
         "format-charging": "󰂄",
         "format-icons": [ "󰂎","󰁺","󰁻","󰁼","󰁽","󰁾","󰁿","󰂀","󰂁","󰂂","󰁹" ],
+        "format-full": "󰁹",
         "interval": 2
     },
     "battery": {
         "format": "{capacity}%",
         "format-charging": "{capacity}%",
+        "format-full": "100%",
         "interval": 10
     }
 }
