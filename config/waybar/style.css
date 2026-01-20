@@ -19,7 +19,7 @@
 #g-workspaces,
 #g-hardware,
 #g-network {
-    background: @transblack;
+    background: @dark;
     border-radius: 15pt;
     margin-right: 10px;
 }
@@ -30,7 +30,7 @@
     border-radius: 15pt;
 }
 #custom-arch:hover {
-    color: @transblack;
+    color: @dark;
     background: linear-gradient(@enby-yellow, @enby-white, @enby-purple, @enby-black);
 }
 
@@ -73,7 +73,9 @@
 
 #workspaces button.urgent {
     animation: blink 1.5s infinite ease-in-out;
-}
+    text-shadow: red;
+    color: red;
+} /** test with https://archlinux.org **/ 
 
 #workspaces button:hover {
     opacity: 1;
@@ -93,18 +95,22 @@
 /* CENTER ***********************/
 
 #clock {
-    background: @transblack;
+    background: @dark;
     border-radius: 15pt;
     color: @bright;
     font-size: 15px;
     padding: 0 12px;
+}
+#clock:hover {
+    color: @dark;
+    background: linear-gradient(to right, @trans-blue, @trans-pink, @trans-white, @trans-pink, @trans-blue);
 }
 
 /* RIGHT ************************/
 
 #g-network,
 #g-right {
-    background: @transblack;
+    background: @dark;
     border-radius: 15pt;
     padding: 0 5pt;
 }
@@ -126,7 +132,7 @@
 #tray { /** TO DO ***/
     margin-left: 10px;
     padding: 0 5px;
-    background: @transblack;
+    background: @dark;
     border-radius: 15pt;
 }
 #tray * {
@@ -203,7 +209,7 @@ tooltip {
 /* POP UPS ****************************/
 
 menu {
-    background-color: @transblack;
+    background-color: @dark;
     color: #ffffff;
     border-radius: 6pt;
     box-shadow: none;
