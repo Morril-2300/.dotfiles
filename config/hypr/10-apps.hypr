@@ -10,6 +10,7 @@ $fileManager = thunar
 $menu = rofi -show drun
 $editor = vscodium
 $passwords = keepassxc
+$voiceChat = vesktop
 $webbrowser = firefox
 $emoji = rofimoji -s light
 $settings = $editor ~/.dotfiles

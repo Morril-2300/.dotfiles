@@ -13,6 +13,7 @@ bind = $mainMod, E, exec, $fileManager
 bind = $mainMod, C, exec, $editor
 bind = $mainMod, I, exec, $settings
 bind = $mainMod, W, exec, $webbrowser
+bind = $mainMod, V, exec, $voiceChat
 bind = $mainMod, code:60, exec, $emoji
 
 
@@ -30,6 +31,8 @@ bind = $mainMod, J, togglesplit, # dwindle
 
 bind = $mainMod, M, exit,
 bind = $mainMod, R, forcerendererreload,
+
+bind = $mainMod, L, exec, pidof hyprlock || hyprlock
 
 
 # Move window with mainMod + arrow keys
