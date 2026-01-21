@@ -205,5 +205,10 @@
         "format-charging": "{capacity}%",
         "format-full": "100%",
         "interval": 10
+    },
+
+    "tray": {
+        "icon-size": 20,
+        "spacing": 2
     }
 }

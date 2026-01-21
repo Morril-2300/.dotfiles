@@ -8,9 +8,13 @@
     background: transparent;
     font-weight: 700;
     font-size: 12pt;
+}
+
+window#waybar {
     box-shadow: none;
     color: @bright;
 }
+
 
 
 /* LEFT ******************************/
@@ -21,7 +25,7 @@
 #g-network {
     background: @dark;
     border-radius: 15pt;
-    margin-right: 10px;
+    margin-right: 10pt;
 }
 
 /* arch */
@@ -73,13 +77,13 @@
 
 #workspaces button.urgent {
     animation: blink 1.5s infinite ease-in-out;
-    text-shadow: red;
-    color: red;
-} /** test with https://archlinux.org **/ 
+    color: @violet;
+}
 
 #workspaces button:hover {
     opacity: 1;
     color: @bright;
+    background: none;
 }
 
 
@@ -129,17 +133,12 @@
     padding: 0 5pt;
 }
 
-#tray { /** TO DO ***/
-    margin-left: 10px;
-    padding: 0 5px;
+#tray {
+    margin-left: 10pt;
+    padding: 0 7pt;
     background: @dark;
     border-radius: 15pt;
 }
-#tray * {
-    padding: 0 5px;
-}
-
-
 
 /* Tooltip Styles ************************/
 tooltip * {
@@ -188,7 +187,7 @@ tooltip {
 
 #temperature.icon,
 #battery.icon {
-    font-size:14pt;
+    font-size: 14pt;
 }
 
 #workspaces,
@@ -224,7 +223,7 @@ menu *:hover {
            opacity: 1;
     }
     50% {
-           opacity: .1;
+           opacity: .33;
     }
     100% {
            opacity: 1;
