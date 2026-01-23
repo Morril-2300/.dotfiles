@@ -20,8 +20,8 @@
             "activated": "󱙲",
             "deactivated": "󰍁"
         },
-        "tooltip-format-activated": "idle lock disabled",
-        "tooltip-format-deactivated": "idle lock enabled"
+        "tooltip-format-activated": "<s>hypridle</s>",
+        "tooltip-format-deactivated": "hypridle"
     },
 
     "backlight#icon": {
