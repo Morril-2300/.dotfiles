@@ -1,5 +1,11 @@
 #!/usr/bin/env bash
 
+read -r -p "Install packages [y/N] " response
+if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]]
+then
+    ./install.sh
+fi
+
 # check if we are executed in the correct directory
 if [[ ! -f ./initialize.sh ]]; then
 	echo "PANIC: I am not executed in the correct directory!!!"
