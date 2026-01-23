@@ -21,7 +21,8 @@ bind = $mainMod,        Q,      killactive,
 bind = $mainMod SHIFT,  Q,      forcekillactive,
 bind = $mainMod,        Space,  togglefloating,
 bind = $mainMod,        F,      fullscreenstate, 3
-bind = $mainMod,        Tab,    cyclenext,
+bind =          ALT,    Tab,    cyclenext,
+bind = $mainMod,        Tab,    exec, hypr-cycle
 
 bind = $mainMod,        B,      exec, killall -SIGUSR1 waybar
 bind = $mainMod SHIFT,  B,      exec, pgrep -U $USER waybar >/dev/null && killall -SIGUSR2 waybar || exec waybar
