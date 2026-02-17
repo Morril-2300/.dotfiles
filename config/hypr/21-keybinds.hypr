@@ -30,7 +30,7 @@ bind = $mainMod SHIFT,  B,      exec, pgrep -U $USER waybar >/dev/null && killal
 bind = $mainMod, P, pseudo, # dwindle
 bind = $mainMod, J, togglesplit, # dwindle
 
-bind = $mainMod, M, exit,
+bind = $mainMod, X, exit,
 bind = $mainMod, R, forcerendererreload,
 
 bind = $mainMod, L, exec, pidof hyprlock || hyprlock
