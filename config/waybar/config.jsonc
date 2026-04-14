@@ -3,6 +3,7 @@
         "~/.config/waybar/modules.jsonc"
     ],
 
+    "output": ["eDP-1"],
     "layer": "top",
     "position": "top",
     "height": "30",

@@ -8,8 +8,9 @@
         "menu-file": "~/.config/waybar/menu/home.xml",
         "menu-actions": {
             "action-1": "hyprctl dispatch exec systemctl suspend",
-            "action-2": "hyprctl dispatch exec poweroff",
-            "action-3": "hyprctl dispatch exec reboot"
+            "action-2": "hyprctl dispatch exec systemctl hibernate",
+            "action-3": "hyprctl dispatch exec poweroff",
+            "action-4": "hyprctl dispatch exec reboot"
   		}
     },
 
