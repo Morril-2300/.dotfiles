@@ -5,23 +5,22 @@
 # See https://wiki.hypr.land/Configuring/Keywords/
 $mainMod = SUPER # Sets "Windows" key as main modifier
 
-
 # powerbutton sleep
 bind  =         , XF86PowerOff, exec, systemctl suspend
 bind  = $mainMod SHIFT, XF86PowerOff, exec, systemctl hybernate
 bind  = $mainMod, XF86PowerOff, exec, poweroff
 
-
 # see https://wiki.hypr.land/Configuring/Binds/
-bind = $mainMod, return, exec, $terminal
-bind = $mainMod, D, exec, $menu
-bind = $mainMod, K, exec, $passwords
-bind = $mainMod, E, exec, $fileManager
-bind = $mainMod, C, exec, $editor
-bind = $mainMod, I, exec, $settings
-bind = $mainMod, W, exec, $webbrowser
-bind = $mainMod, V, exec, $voiceChat
-bind = $mainMod, code:60, exec, $emoji
+bind = $mainMod,        return,  exec, $terminal
+bind = $mainMod,        D,       exec, $menu
+bind = $mainMod SHIFT,  201,     exec, $menu #copilot
+bind = $mainMod,        K,       exec, $passwords
+bind = $mainMod,        E,       exec, $fileManager
+bind = $mainMod,        C,       exec, $editor
+bind = $mainMod,        I,       exec, $settings
+bind = $mainMod,        W,       exec, $webbrowser
+bind = $mainMod,        V,       exec, $voiceChat
+bind = $mainMod,        code:60, exec, $emoji
 
 
 bind = $mainMod,        Q,      killactive,
@@ -42,6 +41,8 @@ bind = $mainMod, R, forcerendererreload,
 
 bind = $mainMod, L, exec, pidof hyprlock || hyprlock
 
+# Unbind Copilot+Q
+unbind = $mainMod SHIFT 201, Q
 
 # Move window with mainMod + arrow keys
 bind = $mainMod SHIFT, left,  movewindow, l
