@@ -7,7 +7,7 @@ then
 fi
 
 # check if we are executed in the correct directory
-if [[ ! -f ./initialize.sh ]]; then
+if [[ ! -f ./update.sh ]]; then
 	echo "PANIC: I am not executed in the correct directory!!!"
 	exit -1
 fi
