@@ -6,6 +6,7 @@ ark
 blueman
 brightnessctl
 efibootmgr
+flameshot
 git
 gnome-keyring
 greetd-agreety
@@ -18,7 +19,6 @@ hyprlock
 hyprpaper
 inkscape
 jome
-keepassxc
 kvantum
 libcava
 linux
@@ -59,7 +59,5 @@ vulkan-radeon
 waybar
 wev
 wtype
-yay-bin-debug
-yay-debug
 yay-git
 zsh
