@@ -22,6 +22,10 @@ bind = $mainMod,        W,       exec, $webbrowser
 bind = $mainMod,        V,       exec, $voiceChat
 bind = $mainMod,        code:60, exec, $emoji
 
+bind = $mainMod SHIFT,      S,  exec, $screenshot
+bind = $mainMod SHIFT ALT , S,  exec, $screenshotWindow
+bind = $mainMod SHIFT CTRL, S,  exec, $screenshotFull
+
 
 bind = $mainMod,        Q,      killactive,
 bind = $mainMod SHIFT,  Q,      forcekillactive,
@@ -91,10 +95,6 @@ bind = $mainMod ALT SHIFT, 7, movetoworkspace, 7
 bind = $mainMod ALT SHIFT, 8, movetoworkspace, 8
 bind = $mainMod ALT SHIFT, 9, movetoworkspace, 9
 bind = $mainMod ALT SHIFT, 0, movetoworkspace, 10
-
-# Example special workspace (scratchpad)
-bind = $mainMod, S, togglespecialworkspace, magic
-bind = $mainMod SHIFT, S, movetoworkspace, special:magic
 
 # Scroll through existing workspaces with mainMod + scroll
 bind = $mainMod, mouse_down, workspace, e+1

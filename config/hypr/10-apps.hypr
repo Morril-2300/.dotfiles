@@ -5,15 +5,18 @@
 # See https://wiki.hypr.land/Configuring/Keywords/
 
 # Set programs that you use
-$terminal = alacritty
-$fileManager = thunar
-$menu = rofi -show drun || pkill rofi
-$editor = vscodium
-$passwords = keepassxc
-$voiceChat = vesktop
-$webbrowser = firefox
-$emoji = rofimoji -s light
-$settings = $editor ~/.dotfiles
+$terminal       = alacritty
+$fileManager    = thunar
+$menu           = rofi -show drun || pkill rofi
+$editor         = vscodium
+$voiceChat      = vesktop
+$webbrowser     = firefox
+$emoji          = rofimoji -s light
+$settings       = $editor ~/.dotfiles
+
+$screenshot         = slurp | grim -g - - | wl-copy
+$screenshotWindow   = hyprctl -j activewindow | jq -r '"\(.at[0]),\(.at[1]) \(.size[0])x\(.size[1])"' | grim -g - - | wl-copy
+$screenshotFull     = grim - | wl-copy
 
 #################
 ### AUTOSTART ###
