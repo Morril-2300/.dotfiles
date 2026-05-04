@@ -101,7 +101,7 @@
     },
 
     "clock": {
-        "format": "󰥔 {:%F %T %Z}",
+        "format": "{:%F  %T}",
         "interval": 1,
         "tooltip": false
     },

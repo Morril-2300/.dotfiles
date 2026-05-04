@@ -83,7 +83,6 @@ window#waybar {
 #workspaces button:hover {
     opacity: 1;
     color: @bright;
-    background: none;
 }
 
 
@@ -107,7 +106,12 @@ window#waybar {
 }
 #clock:hover {
     color: @dark;
-    background: linear-gradient(to right, @trans-blue, @trans-pink, @trans-white, @trans-pink, @trans-blue);
+    background: linear-gradient(@trans-blue, @trans-pink, @trans-white, @trans-pink, @trans-blue), 
+                linear-gradient(@lesbian-0, @lesbian-1, @lesbian-2, @lesbian-3, @lesbian-4);
+    background-size: 50% 100%, 50% 100%;
+    background-position: top left, bottom right;
+    background-repeat: no-repeat;
+
 }
 
 /* RIGHT ************************/
