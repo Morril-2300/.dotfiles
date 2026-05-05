@@ -64,11 +64,11 @@ window#waybar {
 }
 
 #workspaces button.persistent {
-    opacity: 0.7;
+    opacity: 0.75;
 }
 
 #workspaces button.empty {
-    opacity: 0.2;
+    opacity: 0.5;
 }
 
 #workspaces button.active {
@@ -214,9 +214,11 @@ tooltip {
 menu {
     background-color: @dark;
     color: #ffffff;
+    padding: 0;
     border-radius: 6pt;
     box-shadow: none;
 }
+
 menu *:hover {
     background-color: rgba(32, 32, 32, 0.8);
     opacity: 1;
