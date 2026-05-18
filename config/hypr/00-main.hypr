@@ -1,5 +1,0 @@
-
-# includes: source=./
-source=./10-apps.hypr
-source=./20-input.hypr
-source=./21-keybinds.hypr
